@@ -43,7 +43,7 @@ Nimap Machine Test: Product and Category Management
 
 ---
 ## Project Setup Instructions
-- Clone the Repository:
+- Clone the Repository: https://github.com/rushibhoite188/NimapMachineTestSolution
 - Open in Visual Studio:
 - Open the .sln file in Visual Studio.
 
