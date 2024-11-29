@@ -1,0 +1,19 @@
+﻿@model NimapMachineTestSolution.Models.Category
+
+@{
+    ViewBag.Title = "Edit Category";
+}
+
+<h2>Edit Category</h2>
+
+@using (Html.BeginForm("Edit", "Category", FormMethod.Post))
+{
+    @Html.HiddenFor(model => model.CategoryId)
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.CategoryName)
+        @Html.TextBoxFor(model => model.CategoryName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.CategoryName)
+    </div>
+    <button type="submit" class="btn btn-warning">Save Changes</button>
+}
